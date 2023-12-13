@@ -15,6 +15,10 @@ void main (){
 
   const pi = 3.1416;
 
+  print(curso);
+  print(idade);
+  print(pi);
+
 
 
 }
