@@ -4,9 +4,9 @@ void main(){
   //Questão 1
 
   stdout.write("Digite sua idade: ");  
-  final idade = double.parse(stdin.readLineSync()!);
+  final idade = int.parse(stdin.readLineSync()!);
 
-  if(idade > 18){
+  if(idade >= 18){
 
     print("Você está apto a votar");
   }else {
@@ -16,7 +16,7 @@ void main(){
   //Questão 2
   
   stdout.write("Digite sua idade: ");  
-  final idade2 = double.parse(stdin.readLineSync()!);
+  final idade2 = int.parse(stdin.readLineSync()!);
   stdout.write("Digite sua quantidade de dinheiro: ");  
   final valor = double.parse(stdin.readLineSync()!);
 
@@ -30,9 +30,9 @@ void main(){
   //Questão 3
   
   stdout.write("Digite um numero: ");  
-  final num1 = double.parse(stdin.readLineSync()!);
+  final num1 = int.parse(stdin.readLineSync()!);
   stdout.write("Digite outro numero: ");  
-  final num2 = double.parse(stdin.readLineSync()!);
+  final num2 = int.parse(stdin.readLineSync()!);
 
   if(num1==num2){
     print("Números iguais!");
@@ -45,25 +45,23 @@ void main(){
   //Questão 4
   
   stdout.write("Digite um numero: ");  
-  final num12 = double.parse(stdin.readLineSync()!);
-  final precoDuzia = 0.25;
-  final precoNaoDuzia = 0.30;
-  var resultado = num1;
+  final qtdMacas = int.parse(stdin.readLineSync()!);
+  double valor2;
 
 
-  if(num12 >= 12){
-    resultado = num1 * precoDuzia;
-    print("O valor da sua compre é: $resultado");
-  }if(num12 < 12){
-    resultado = num1 * precoNaoDuzia;
-    print("O valor da sua compre é: $resultado");
+  if(qtdMacas >= 12){
+    valor2 = qtdMacas * 0.3;
+  }else{
+    valor2 = qtdMacas * 0.25;
   }
+
+  print("O valor a pagar é $valor2");
   
   
   //Questão 5
 
   stdout.write("Digite um numero: ");  
-  final num01 = double.parse(stdin.readLineSync()!);
+  final num01 = int.parse(stdin.readLineSync()!);
 
   if( num01 % 2 == 0){
     print("Número é par!");
